@@ -146,7 +146,9 @@ function applyLang(lang) {
   });
   document.documentElement.lang = lang;
   const label = document.getElementById('langLabel');
-  if (label) label.textContent = lang === 'es' ? 'EN' : 'ES';
+  const btn = document.getElementById('langToggle');
+  if (btn) btn.style.display = lang === 'es' ? '' : 'none';
+  if (label) label.textContent = 'EN';
   currentLang = lang;
 }
 
