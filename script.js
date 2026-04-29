@@ -6,7 +6,7 @@ const translations = {
     'nav.academy': 'Academia',
     'nav.contact': 'Contacto',
     'hero.label': 'Buenos Aires, Motion & CGI Studio',
-    'hero.headline': 'Unreal<br>to Real.',
+    'hero.headline': 'Unreal to Real.',
     'hero.sub': 'FOOH &nbsp;·&nbsp; DOOH &nbsp;·&nbsp; Animación 3D &nbsp;·&nbsp; IA Generativa',
     'hero.cta1': 'Cotizá tu proyecto',
     'hero.cta2': 'Ver trabajos →',
@@ -71,7 +71,7 @@ const translations = {
     'nav.academy': 'Academy',
     'nav.contact': 'Contact',
     'hero.label': 'Buenos Aires, Motion & CGI Studio',
-    'hero.headline': 'Unreal<br>to Real.',
+    'hero.headline': 'Unreal to Real.',
     'hero.sub': 'FOOH &nbsp;·&nbsp; DOOH &nbsp;·&nbsp; 3D Animation &nbsp;·&nbsp; Generative AI',
     'hero.cta1': 'Get a Quote',
     'hero.cta2': 'View Our Work →',
@@ -146,7 +146,7 @@ function applyLang(lang) {
   });
   document.documentElement.lang = lang;
   const label = document.getElementById('langLabel');
-  if (label) label.textContent = lang === 'es' ? 'EN' : 'ES';
+  if (label) label.textContent = lang === 'es' ? 'ES' : 'EN';
   currentLang = lang;
 }
 
