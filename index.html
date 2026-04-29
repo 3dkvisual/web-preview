@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="3DK Visual — Motion & CGI Studio en Buenos Aires. FOOH, DOOH, Animación 3D, Workflow con IA." />
+  <title>3DK Visual — Unreal to Real</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">3DK VISUAL</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#academy" data-i18n="nav.academy">Academia</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+        <span id="langLabel">EN</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO — video de fondo, texto encima -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="reel.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <p class="hero-label" data-i18n="hero.label">Buenos Aires, Motion & CGI Studio</p>
+        <h1 class="hero-headline" data-i18n="hero.headline">Unreal to Real.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">CGI &nbsp;·&nbsp; Animación 3D &nbsp;·&nbsp; IA Generativa</p>
+      </div>
+      <div class="hero-scroll-hint"><span></span></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">+1.000</span>
+          <span class="stat-label" data-i18n="stats.label1">Proyectos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">+100</span>
+          <span class="stat-label" data-i18n="stats.label2">Clientes</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label" data-i18n="stats.label3">Años</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Global</span>
+          <span class="stat-label" data-i18n="stats.label4">Marcas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="clients">
+      <div class="container">
+        <p class="clients-label" data-i18n="clients.label">Trusted by global brands</p>
+        <div class="clients-grid">
+          <span class="client-chip">Coca-Cola</span>
+          <span class="client-chip">Puma</span>
+          <span class="client-chip">Banco Galicia</span>
+          <span class="client-chip">Banco Nación</span>
+          <span class="client-chip">AXE</span>
+          <span class="client-chip">Kérastase</span>
+          <span class="client-chip">Fila</span>
+          <span class="client-chip">Pedido Ya</span>
+          <span class="client-chip">UNICEF</span>
+          <span class="client-chip">Roche</span>
+          <span class="client-chip">La Serenísima</span>
+          <span class="client-chip">Mowi</span>
+          <span class="client-chip">Publicis Group</span>
+          <span class="client-chip">WPP · Ogilvy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="services.tag">Lo que hacemos</span>
+          <h2 class="section-title" data-i18n="services.title">Servicios</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-index">01</div>
+            <h3 class="service-name" data-i18n="s1.name">CGI FOOH</h3>
+            <p class="service-desc" data-i18n="s1.desc">Campañas CGI de Fake Out-Of-Home diseñadas para impacto viral. Efectos visuales hiperrealistas integrados en footage real.</p>
+            <a href="#contact" class="service-link" data-i18n="s1.link">Iniciar proyecto →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-index">02</div>
+            <h3 class="service-name" data-i18n="s2.name">DOOH</h3>
+            <p class="service-desc" data-i18n="s2.desc">Contenido 3D anamórfico para pantallas digitales out-of-home. Visuales inmersivos que rompen el marco y detienen audiencias.</p>
+            <a href="#contact" class="service-link" data-i18n="s2.link">Iniciar proyecto →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-index">03</div>
+            <h3 class="service-name" data-i18n="s3.name">Video 3D de Producto</h3>
+            <p class="service-desc" data-i18n="s3.desc">Renders y animaciones 3D hiperrealistas de producto para publicidad y e-commerce. Cada detalle llevado al máximo nivel.</p>
+            <a href="#contact" class="service-link" data-i18n="s3.link">Iniciar proyecto →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-index">04</div>
+            <h3 class="service-name" data-i18n="s4.name">IA Generativa</h3>
+            <p class="service-desc" data-i18n="s4.desc">Producción CGI potenciada con IA generativa integrada. Más iteraciones, más posibilidades creativas, mismo estándar de producción.</p>
+            <a href="#contact" class="service-link" data-i18n="s4.link">Iniciar proyecto →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="portfolio.tag">Trabajos seleccionados</span>
+          <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+        </div>
+        <div class="portfolio-grid">
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <div class="portfolio-placeholder p-abf"></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-type">FOOH · DOOH</span>
+                <h4>American Business Forum</h4>
+                <p>Campaña CGI · Miami</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <div class="portfolio-placeholder p-kerastase"></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-type">Render de Producto</span>
+                <h4>Kérastase</h4>
+                <p>Visualización 3D · Publicis</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <div class="portfolio-placeholder p-mowi"></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-type">DOOH</span>
+                <h4>Mowi</h4>
+                <p>3D Anamórfico · Pantalla en L</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <div class="portfolio-placeholder p-coca"></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-type">FOOH</span>
+                <h4>Coca-Cola</h4>
+                <p>Campaña CGI Social</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <div class="portfolio-placeholder p-puma"></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-type">Animación 3D</span>
+                <h4>Puma</h4>
+                <p>Animación de Lanzamiento</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <div class="portfolio-placeholder p-galicia"></div>
+              <div class="portfolio-overlay">
+                <span class="portfolio-type">IA Generativa</span>
+                <h4>Banco Galicia</h4>
+                <p>Contenido Visual · IA</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMY -->
+    <section id="academy" class="section academy">
+      <div class="container">
+        <div class="section-header academy-header">
+          <span class="section-tag" data-i18n="academy.tag">3DK Academia</span>
+          <h2 class="section-title" data-i18n="academy.title">Aprendé CGI e IA de un<br>profesional en actividad.</h2>
+          <p class="section-sub" data-i18n="academy.sub">Workflows reales. Clientes reales. Resultados reales.<br>Dominá las herramientas que cobran desde un estudio CGI en Buenos Aires.</p>
+        </div>
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-num" data-i18n="c1.num">01</div>
+            <div class="course-thumb course-thumb--fooh"></div>
+            <div class="course-body">
+              <h3 class="course-title" data-i18n="c1.title">CGI FOOH<br>en Blender</h3>
+              <p class="course-niche" data-i18n="c1.niche">Publicidad Viral</p>
+              <ul class="course-features">
+                <li data-i18n="c1.f1">Tracking y compositing VFX</li>
+                <li data-i18n="c1.f2">Producción de campañas FOOH</li>
+                <li data-i18n="c1.f3">Add-on de tracking exclusivo (3 meses gratis)</li>
+                <li data-i18n="c1.f4">Mentoría 1:1 incluida</li>
+              </ul>
+              <div class="course-price">
+                <span class="price-amount">$300 <span class="price-currency">USD</span></span>
+                <span class="price-note" data-i18n="c1.note">Precio lanzamiento · Regular $499</span>
+              </div>
+              <a href="#contact" class="btn btn-course" data-i18n="c1.cta">Reservar lugar</a>
+            </div>
+          </div>
+
+          <div class="course-card course-featured">
+            <div class="course-num" data-i18n="c2.num">02</div>
+            <div class="course-thumb course-thumb--comfy"></div>
+            <div class="course-body">
+              <h3 class="course-title" data-i18n="c2.title">Blender +<br>ComfyUI</h3>
+              <p class="course-niche" data-i18n="c2.niche">Workflows Híbridos</p>
+              <ul class="course-features">
+                <li data-i18n="c2.f1">Pipeline 3D + IA integrado</li>
+                <li data-i18n="c2.f2">ControlNet y workflows de profundidad</li>
+                <li data-i18n="c2.f3">Outputs listos para producción</li>
+                <li data-i18n="c2.f4">Mentoría 1:1 incluida</li>
+              </ul>
+              <div class="course-price">
+                <span class="price-amount">$300 <span class="price-currency">USD</span></span>
+                <span class="price-note" data-i18n="c2.note">Precio lanzamiento · Regular $499</span>
+              </div>
+              <a href="#contact" class="btn btn-course" data-i18n="c2.cta">Reservar lugar</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-num" data-i18n="c3.num">03</div>
+            <div class="course-thumb course-thumb--master"></div>
+            <div class="course-body">
+              <h3 class="course-title" data-i18n="c3.title">Master<br>ComfyUI</h3>
+              <p class="course-niche" data-i18n="c3.niche">IA por Nodos</p>
+              <ul class="course-features">
+                <li data-i18n="c3.f1">De cero a producción — nodo por nodo</li>
+                <li data-i18n="c3.f2">Stable Diffusion, LoRA, IPAdapter</li>
+                <li data-i18n="c3.f3">Workflows de video e imagen</li>
+                <li data-i18n="c3.f4">Mentoría 1:1 incluida</li>
+              </ul>
+              <div class="course-price">
+                <span class="price-amount">$300 <span class="price-currency">USD</span></span>
+                <span class="price-note" data-i18n="c3.note">Precio lanzamiento · Regular $499</span>
+              </div>
+              <a href="#contact" class="btn btn-course" data-i18n="c3.cta">Reservar lugar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bundle-bar">
+          <div class="bundle-text">
+            <strong data-i18n="bundle.title">Bundle — Los 3 cursos</strong>
+            <span data-i18n="bundle.save">Ahorrás $203 USD</span>
+          </div>
+          <div class="bundle-price">
+            <span class="bundle-amount">$697 <span class="price-currency">USD</span></span>
+            <span class="bundle-regular" data-i18n="bundle.regular">Regular $1.197</span>
+          </div>
+          <a href="#contact" class="btn btn-primary" data-i18n="bundle.cta">Obtener el Bundle</a>
+        </div>
+        <p class="academy-note" data-i18n="academy.note">Precio de lanzamiento — primeros 6 meses. Financiación disponible: 6 cuotas de $50 USD.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div class="about-tag-col">
+          <span class="section-tag" data-i18n="about.tag">El estudio</span>
+        </div>
+        <div class="about-content">
+          <p class="about-text" data-i18n="about.p1">Director Creativo &amp; Head of CGI con <strong>más de 10 años</strong> entregando trabajo visual de alto nivel para marcas globales. Fundador de 3DK Visual, un estudio en Buenos Aires con <strong>más de 1.000 proyectos</strong> y <strong>más de 100 clientes</strong> en publicidad, DOOH, FOOH y AR.</p>
+          <p class="about-text" data-i18n="about.p2">Colaboraciones con agencias de <strong>Publicis Group</strong> y <strong>WPP / Ogilvy</strong>.</p>
+          <div class="about-agencies">
+            <span>Publicis Group</span>
+            <span class="sep">/</span>
+            <span>WPP · Ogilvy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact.tag">Trabajemos juntos</span>
+          <h2 class="section-title" data-i18n="contact.title">Iniciá un proyecto</h2>
+          <p class="section-sub" data-i18n="contact.sub">Contanos qué estás construyendo.<br>Nosotros te decimos cómo hacerlo inolvidable.</p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" action="mailto:info@3dkvisual.com" method="POST" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-i18n="form.name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" data-i18n-ph="form.name.ph" required />
+              </div>
+              <div class="form-group">
+                <label for="company" data-i18n="form.company">Empresa</label>
+                <input type="text" id="company" name="company" placeholder="Nombre de tu empresa" data-i18n-ph="form.company.ph" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form.email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" data-i18n-ph="form.email.ph" required />
+            </div>
+            <div class="form-group">
+              <label for="service" data-i18n="form.service">Servicio</label>
+              <select id="service" name="service">
+                <option value="" disabled selected data-i18n="form.service.ph">Seleccioná un servicio</option>
+                <option value="FOOH / DOOH">FOOH / DOOH</option>
+                <option value="Video 3D de Producto">Video 3D de Producto</option>
+                <option value="Workflow con IA">Workflow con IA</option>
+                <option value="Academia">Academia</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form.message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" placeholder="Contanos sobre tu proyecto…" data-i18n-ph="form.message.ph" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="form.submit">Enviar mensaje</button>
+          </form>
+          <div class="contact-info">
+            <div class="contact-detail">
+              <span class="contact-detail-label">Email</span>
+              <a href="mailto:info@3dkvisual.com">info@3dkvisual.com</a>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label">Teléfono</span>
+              <a href="tel:+541151370809">+54 11 5137-0809</a>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label" data-i18n="contact.loc">Ubicación</span>
+              <span>Buenos Aires, Argentina</span>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-label">Instagram</span>
+              <a href="https://instagram.com/3dkvisual" target="_blank" rel="noopener">@3dkvisual</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">3DK VISUAL</span>
+        <p class="footer-tagline" data-i18n="footer.tagline">Unreal to Real.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#services" data-i18n="nav.services">Servicios</a>
+        <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="#academy" data-i18n="nav.academy">Academia</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://instagram.com/3dkvisual" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linkedin.com/company/3dkvisual" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p data-i18n="footer.copy">© 2026 3DK Visual. Todos los derechos reservados.</p>
+      <p>Buenos Aires, Argentina</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
