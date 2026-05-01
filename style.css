@@ -526,7 +526,7 @@ img { display: block; max-width: 100%; }
   transform: scale(1.03);
 }
 .client-chip img.client-logo--xl {
-  height: 88px;
+  height: 72px;
 }
 
 /* ─── ACADEMY ────────────────────────────────────────────────────── */
@@ -991,7 +991,7 @@ img { display: block; max-width: 100%; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .client-chip { min-height: 104px; padding: 18px 14px; font-size: 13px; }
   .client-chip img { height: 64px; }
-  .client-chip img.client-logo--xl { height: 72px; }
+  .client-chip img.client-logo--xl { height: 58px; }
 }
 
 @media (max-width: 480px) {
