@@ -245,6 +245,11 @@ img { display: block; max-width: 100%; }
   object-fit: cover;
 }
 
+.hero-video-contain {
+  object-fit: contain;
+  background: #050505;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
