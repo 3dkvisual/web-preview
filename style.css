@@ -992,9 +992,9 @@ img { display: block; max-width: 100%; }
 /* Small Mobile — 480px */
 @media (max-width: 768px) {
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
-  .client-chip { min-height: 60px; padding: 12px 10px; font-size: 13px; }
-  .client-chip img { max-width: 60%; max-height: 22px; }
-  .client-chip img.client-logo--xl { max-width: 64%; max-height: 24px; }
+  .client-chip { min-height: 64px; padding: 14px 10px; font-size: 13px; }
+  .client-chip img { max-width: 60%; max-height: 28px; }
+  .client-chip img.client-logo--xl { max-width: 64%; max-height: 30px; }
 }
 
 @media (max-width: 480px) {
