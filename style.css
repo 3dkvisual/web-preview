@@ -511,10 +511,10 @@ img { display: block; max-width: 100%; }
 }
 .client-chip img {
   display: block;
-  width: 96px;
-  height: 30px;
+  height: 28px;
+  width: auto;
+  max-width: 78%;
   object-fit: contain;
-  object-position: center;
   opacity: 0.78;
   transition: opacity var(--transition), transform var(--transition);
 }
@@ -527,8 +527,8 @@ img { display: block; max-width: 100%; }
   transform: scale(1.03);
 }
 .client-chip img.client-logo--xl {
-  width: 96px;
-  height: 30px;
+  height: 28px;
+  max-width: 82%;
 }
 
 /* ─── ACADEMY ────────────────────────────────────────────────────── */
@@ -992,8 +992,8 @@ img { display: block; max-width: 100%; }
 @media (max-width: 768px) {
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .client-chip { min-height: 56px; padding: 12px 10px; font-size: 13px; }
-  .client-chip img { width: 70px; height: 22px; }
-  .client-chip img.client-logo--xl { width: 70px; height: 22px; }
+  .client-chip img { height: 22px; width: auto; max-width: 72%; }
+  .client-chip img.client-logo--xl { height: 22px; max-width: 76%; }
 }
 
 @media (max-width: 480px) {
