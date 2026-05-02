@@ -513,11 +513,18 @@ img { display: block; max-width: 100%; }
   display: block;
   height: 30px;
   width: auto;
-  max-width: 104px;
+  max-width: 112px;
   object-fit: contain;
   opacity: 0.78;
   transition: opacity var(--transition), transform var(--transition);
 }
+.client-chip img.client-logo--wide { max-width: 132px; }
+.client-chip img.client-logo--tall { height: 40px; max-width: 112px; }
+.client-chip img.client-logo--wpp { height: 34px; max-width: 118px; }
+.client-chip img.client-logo--puma { height: 36px; max-width: 118px; }
+.client-chip img.client-logo--publicis { height: 48px; max-width: 118px; }
+.client-chip img.client-logo--gancia { height: 36px; max-width: 132px; }
+.client-chip img.client-logo--ogilvy { height: 36px; max-width: 132px; }
 .client-chip:hover {
   background: #1c1c1c;
   color: rgba(255,255,255,0.85);
@@ -988,7 +995,14 @@ img { display: block; max-width: 100%; }
 @media (max-width: 768px) {
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .client-chip { min-height: 56px; padding: 12px 10px; font-size: 13px; }
-  .client-chip img { height: 24px; width: auto; max-width: 84px; }
+  .client-chip img { height: 24px; width: auto; max-width: 86px; }
+  .client-chip img.client-logo--wide { max-width: 106px; }
+  .client-chip img.client-logo--tall { height: 31px; max-width: 86px; }
+  .client-chip img.client-logo--wpp { height: 27px; max-width: 96px; }
+  .client-chip img.client-logo--puma { height: 29px; max-width: 96px; }
+  .client-chip img.client-logo--publicis { height: 38px; max-width: 96px; }
+  .client-chip img.client-logo--gancia { height: 29px; max-width: 106px; }
+  .client-chip img.client-logo--ogilvy { height: 29px; max-width: 106px; }
 }
 
 @media (max-width: 480px) {
