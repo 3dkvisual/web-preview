@@ -3,7 +3,7 @@ const translations = {
   es: {
     'nav.services': 'Servicios',
     'nav.portfolio': 'Portfolio',
-    'nav.academy': 'Labs',
+    'nav.academy': 'Academia',
     'nav.contact': 'Contacto',
     'hero.label': 'Buenos Aires, Motion & CGI Studio',
     'hero.headline': 'Unreal to Real.',
@@ -68,7 +68,7 @@ const translations = {
   en: {
     'nav.services': 'Services',
     'nav.portfolio': 'Portfolio',
-    'nav.academy': 'Labs',
+    'nav.academy': 'Academy',
     'nav.contact': 'Contact',
     'hero.label': 'Buenos Aires, Motion & CGI Studio',
     'hero.headline': 'Unreal to Real.',
