@@ -510,13 +510,13 @@ img { display: block; max-width: 100%; }
   transition: background var(--transition), color var(--transition), transform var(--transition);
 }
 .client-chip img {
+  display: block;
+  height: 28px;
   width: auto;
-  height: auto;
-  max-width: 60%;
-  max-height: 28px;
+  max-width: 72%;
   object-fit: contain;
   object-position: center;
-  opacity: 0.82;
+  opacity: 0.78;
   transition: opacity var(--transition), transform var(--transition);
 }
 .client-chip:hover {
@@ -528,8 +528,8 @@ img { display: block; max-width: 100%; }
   transform: scale(1.03);
 }
 .client-chip img.client-logo--xl {
-  max-width: 64%;
-  max-height: 30px;
+  height: 28px;
+  max-width: 76%;
 }
 
 /* ─── ACADEMY ────────────────────────────────────────────────────── */
@@ -992,9 +992,9 @@ img { display: block; max-width: 100%; }
 /* Small Mobile — 480px */
 @media (max-width: 768px) {
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
-  .client-chip { min-height: 64px; padding: 14px 10px; font-size: 13px; }
-  .client-chip img { max-width: 60%; max-height: 28px; }
-  .client-chip img.client-logo--xl { max-width: 64%; max-height: 30px; }
+  .client-chip { min-height: 60px; padding: 14px 10px; font-size: 13px; }
+  .client-chip img { height: 22px; width: auto; max-width: 68%; }
+  .client-chip img.client-logo--xl { height: 22px; max-width: 72%; }
 }
 
 @media (max-width: 480px) {
