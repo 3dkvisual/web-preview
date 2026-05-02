@@ -68,7 +68,7 @@ const translations = {
   en: {
     'nav.services': 'Services',
     'nav.portfolio': 'Portfolio',
-    'nav.academy': 'Academy',
+    'nav.academy': 'Academia',
     'nav.contact': 'Contact',
     'hero.label': 'Buenos Aires, Motion & CGI Studio',
     'hero.headline': 'Unreal to Real.',
@@ -96,7 +96,7 @@ const translations = {
     'portfolio.tag': 'Selected Work',
     'portfolio.title': 'Portfolio',
     'clients.label': 'Trusted by global brands',
-    'academy.tag': '3DK Academy',
+    'academy.tag': '3DK Academia',
     'academy.title': 'Learn CGI & AI from a<br>Working Professional.',
     'academy.sub': 'Real workflows. Real clients. Real results.<br>Master the tools that pay — straight from a Buenos Aires CGI studio.',
     'c1.num': '01', 'c1.title': 'CGI FOOH<br>in Blender', 'c1.niche': 'Viral Advertising',
