@@ -496,8 +496,8 @@ img { display: block; max-width: 100%; }
 
 .client-chip {
   background: #141414;
-  min-height: 128px;
-  padding: 24px 28px;
+  min-height: 72px;
+  padding: 16px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -512,8 +512,8 @@ img { display: block; max-width: 100%; }
 .client-chip img {
   width: auto;
   height: auto;
-  max-width: 82%;
-  max-height: 78px;
+  max-width: 60%;
+  max-height: 28px;
   object-fit: contain;
   object-position: center;
   opacity: 0.82;
@@ -528,8 +528,8 @@ img { display: block; max-width: 100%; }
   transform: scale(1.03);
 }
 .client-chip img.client-logo--xl {
-  max-width: 86%;
-  max-height: 84px;
+  max-width: 64%;
+  max-height: 30px;
 }
 
 /* ─── ACADEMY ────────────────────────────────────────────────────── */
@@ -992,9 +992,9 @@ img { display: block; max-width: 100%; }
 /* Small Mobile — 480px */
 @media (max-width: 768px) {
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
-  .client-chip { min-height: 104px; padding: 18px 14px; font-size: 13px; }
-  .client-chip img { max-width: 84%; max-height: 62px; }
-  .client-chip img.client-logo--xl { max-width: 88%; max-height: 68px; }
+  .client-chip { min-height: 60px; padding: 12px 10px; font-size: 13px; }
+  .client-chip img { max-width: 60%; max-height: 22px; }
+  .client-chip img.client-logo--xl { max-width: 64%; max-height: 24px; }
 }
 
 @media (max-width: 480px) {
