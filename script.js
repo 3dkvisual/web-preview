@@ -255,3 +255,31 @@ document.querySelectorAll('.service-card, .portfolio-card, .course-card, .stat')
   el.classList.add('fade-in');
   observer.observe(el);
 });
+
+// Service video lightbox
+const videoModal = document.getElementById('video-modal');
+const videoModalPlayer = document.getElementById('video-modal-player');
+
+function closeVideoModal() {
+  if (!videoModal) return;
+  videoModalPlayer.pause();
+  videoModalPlayer.src = '';
+  videoModal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.service-video-wrap[data-video]').forEach(wrap => {
+  wrap.addEventListener('click', () => {
+    videoModalPlayer.src = wrap.getAttribute('data-video');
+    videoModalPlayer.load();
+    videoModalPlayer.play().catch(() => {});
+    videoModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+document.getElementById('videoModalClose')?.addEventListener('click', closeVideoModal);
+videoModal?.addEventListener('click', e => { if (e.target === videoModal) closeVideoModal(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && videoModal?.classList.contains('active')) closeVideoModal();
+});

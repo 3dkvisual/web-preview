@@ -106,10 +106,11 @@
           <div class="service-card">
             <div class="service-index">01</div>
             <h3 class="service-name" data-i18n="s1.name">CGI FOOH</h3>
-            <div class="service-video-wrap">
+            <div class="service-video-wrap" data-video="videos/services/s1-fooh.mp4">
               <video autoplay loop muted playsinline>
                 <source src="videos/services/s1-fooh.mp4" type="video/mp4">
               </video>
+              <div class="service-video-play"></div>
             </div>
             <p class="service-desc" data-i18n="s1.desc">Campañas CGI de Fake Out-Of-Home diseñadas para impacto viral. Efectos visuales hiperrealistas integrados en footage real.</p>
             <a href="#contact" class="service-link" data-i18n="s1.link">Iniciar proyecto →</a>
@@ -117,10 +118,11 @@
           <div class="service-card">
             <div class="service-index">02</div>
             <h3 class="service-name" data-i18n="s2.name">DOOH</h3>
-            <div class="service-video-wrap">
+            <div class="service-video-wrap" data-video="videos/services/s2-dooh.mp4">
               <video autoplay loop muted playsinline>
                 <source src="videos/services/s2-dooh.mp4" type="video/mp4">
               </video>
+              <div class="service-video-play"></div>
             </div>
             <p class="service-desc" data-i18n="s2.desc">Contenido 3D anamórfico para pantallas digitales out-of-home. Visuales inmersivos que rompen el marco y detienen audiencias.</p>
             <a href="#contact" class="service-link" data-i18n="s2.link">Iniciar proyecto →</a>
@@ -128,10 +130,11 @@
           <div class="service-card">
             <div class="service-index">03</div>
             <h3 class="service-name" data-i18n="s3.name">Video 3D de Producto</h3>
-            <div class="service-video-wrap">
+            <div class="service-video-wrap" data-video="videos/services/s3-producto.mp4">
               <video autoplay loop muted playsinline>
                 <source src="videos/services/s3-producto.mp4" type="video/mp4">
               </video>
+              <div class="service-video-play"></div>
             </div>
             <p class="service-desc" data-i18n="s3.desc">Renders y animaciones 3D hiperrealistas de producto para publicidad y e-commerce. Cada detalle llevado al máximo nivel.</p>
             <a href="#contact" class="service-link" data-i18n="s3.link">Iniciar proyecto →</a>
@@ -139,10 +142,11 @@
           <div class="service-card">
             <div class="service-index">04</div>
             <h3 class="service-name" data-i18n="s4.name">IA Generativa</h3>
-            <div class="service-video-wrap">
+            <div class="service-video-wrap" data-video="videos/services/s4-ia.mp4">
               <video autoplay loop muted playsinline>
                 <source src="videos/services/s4-ia.mp4" type="video/mp4">
               </video>
+              <div class="service-video-play"></div>
             </div>
             <p class="service-desc" data-i18n="s4.desc">Producción CGI potenciada con IA generativa integrada. Más iteraciones, más posibilidades creativas, mismo estándar de producción.</p>
             <a href="#contact" class="service-link" data-i18n="s4.link">Iniciar proyecto →</a>
@@ -421,6 +425,14 @@
       <p>Buenos Aires, Argentina</p>
     </div>
   </footer>
+
+  <!-- Video Lightbox Modal -->
+  <div id="video-modal" class="video-modal">
+    <div class="video-modal-inner">
+      <button class="video-modal-close" id="videoModalClose">&#x2715;</button>
+      <video id="video-modal-player" controls playsinline></video>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
