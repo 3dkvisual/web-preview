@@ -1138,10 +1138,10 @@ img { display: block; max-width: 100%; }
   background: radial-gradient(ellipse, rgba(0,100,220,0.2) 0%, transparent 70%);
 }
 
-.p-mowi {
-  background: linear-gradient(135deg, #0a1a10 0%, #122a18 40%, #0a150d 100%);
+.p-atomik {
+  background: linear-gradient(135deg, #101020 0%, #181828 40%, #0d0d1a 100%);
 }
-.p-mowi::after {
+.p-atomik::after {
   content: '';
   position: absolute;
   top: 40%; left: 50%;
