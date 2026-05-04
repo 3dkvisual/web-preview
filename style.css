@@ -628,7 +628,7 @@ img { display: block; max-width: 100%; }
 .academy { background: var(--bg); }
 
 .academy-header { max-width: 900px; }
-.academy-icon { width: 80px; height: 80px; object-fit: contain; margin-bottom: 16px; border-radius: 12px; }
+.academy-icon { width: 90px; height: 90px; object-fit: contain; margin-bottom: 16px; mix-blend-mode: screen; }
 
 .courses-grid {
   display: grid;
