@@ -297,11 +297,7 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-scroll-hint {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  display: none;
 }
 .hero-scroll-hint span {
   display: block;
