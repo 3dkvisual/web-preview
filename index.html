@@ -352,7 +352,7 @@
           <p class="section-sub" data-i18n="contact.sub">Contanos qué estás construyendo.<br>Nosotros te decimos cómo hacerlo inolvidable.</p>
         </div>
         <div class="contact-layout">
-          <form class="contact-form" action="mailto:info@3dkvisual.com" method="POST" enctype="text/plain">
+          <form class="contact-form" id="contactForm" action="contact.php" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="name" data-i18n="form.name">Nombre</label>
@@ -382,7 +382,8 @@
               <label for="message" data-i18n="form.message">Mensaje</label>
               <textarea id="message" name="message" rows="5" placeholder="Contanos sobre tu proyecto…" data-i18n-ph="form.message.ph" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full" data-i18n="form.submit">Enviar mensaje</button>
+            <button type="submit" class="btn btn-primary btn-full" id="formSubmit" data-i18n="form.submit">Enviar mensaje</button>
+            <div id="formMsg" style="display:none;margin-top:16px;padding:14px 18px;border-radius:8px;font-size:14px;"></div>
           </form>
           <div class="contact-info">
             <div class="contact-detail">
@@ -441,5 +442,41 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('formSubmit');
+      var msg = document.getElementById('formMsg');
+      btn.disabled = true;
+      btn.textContent = '...';
+      fetch('contact.php', { method: 'POST', body: new FormData(this) })
+        .then(function(r){ return r.json(); })
+        .then(function(data) {
+          msg.style.display = 'block';
+          if (data.ok) {
+            msg.style.background = 'rgba(255,255,255,0.06)';
+            msg.style.color = '#a0f0a0';
+            msg.textContent = data.message;
+            document.getElementById('contactForm').reset();
+            btn.textContent = 'Enviar mensaje';
+            btn.disabled = false;
+          } else {
+            msg.style.background = 'rgba(255,80,80,0.1)';
+            msg.style.color = '#f08080';
+            msg.textContent = data.message;
+            btn.textContent = 'Enviar mensaje';
+            btn.disabled = false;
+          }
+        })
+        .catch(function() {
+          msg.style.display = 'block';
+          msg.style.background = 'rgba(255,80,80,0.1)';
+          msg.style.color = '#f08080';
+          msg.textContent = 'Error al enviar. Escribinos a info@3dkvisual.com';
+          btn.textContent = 'Enviar mensaje';
+          btn.disabled = false;
+        });
+    });
+  </script>
 </body>
 </html>
