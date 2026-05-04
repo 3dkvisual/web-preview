@@ -268,7 +268,7 @@ function closeVideoModal() {
   document.body.style.overflow = '';
 }
 
-document.querySelectorAll('.service-video-wrap[data-video]').forEach(wrap => {
+document.querySelectorAll('.service-video-wrap[data-video], .portfolio-video-wrap[data-video]').forEach(wrap => {
   wrap.addEventListener('click', () => {
     videoModalPlayer.src = wrap.getAttribute('data-video');
     videoModalPlayer.load();
