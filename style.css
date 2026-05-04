@@ -1125,17 +1125,17 @@ img { display: block; max-width: 100%; }
   background: radial-gradient(ellipse, rgba(0,100,220,0.25) 0%, transparent 70%);
 }
 
-.p-kerastase {
-  background: linear-gradient(135deg, #1a1010 0%, #2a1a1a 40%, #150d0d 100%);
+.p-ypf {
+  background: linear-gradient(135deg, #0a1020 0%, #101828 40%, #080e18 100%);
 }
-.p-kerastase::after {
+.p-ypf::after {
   content: '';
   position: absolute;
   top: 40%; left: 50%;
   transform: translate(-50%, -50%);
   width: 40%;
   height: 40%;
-  background: radial-gradient(ellipse, rgba(180,80,80,0.2) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0,100,220,0.2) 0%, transparent 70%);
 }
 
 .p-mowi {
