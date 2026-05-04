@@ -629,6 +629,7 @@ img { display: block; max-width: 100%; }
 
 .academy-header { max-width: 800px; }
 .academy-header .section-title { font-size: clamp(28px, 3.6vw, 44px); }
+.academy-icon { width: 80px; height: 80px; object-fit: contain; margin-bottom: 16px; border-radius: 12px; }
 
 .courses-grid {
   display: grid;
