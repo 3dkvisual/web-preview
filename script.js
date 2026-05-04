@@ -268,10 +268,18 @@ function closeVideoModal() {
   document.body.style.overflow = '';
 }
 
+const videoModalInner = videoModal?.querySelector('.video-modal-inner');
+
 document.querySelectorAll('.service-video-wrap[data-video], .portfolio-video-wrap[data-video]').forEach(wrap => {
   wrap.addEventListener('click', () => {
     videoModalPlayer.src = wrap.getAttribute('data-video');
     videoModalPlayer.load();
+    videoModalPlayer.addEventListener('loadedmetadata', function onMeta() {
+      videoModalPlayer.removeEventListener('loadedmetadata', onMeta);
+      const w = videoModalPlayer.videoWidth;
+      const h = videoModalPlayer.videoHeight;
+      if (videoModalInner) videoModalInner.style.aspectRatio = `${w}/${h}`;
+    });
     videoModalPlayer.play().catch(() => {});
     videoModal.classList.add('active');
     document.body.style.overflow = 'hidden';

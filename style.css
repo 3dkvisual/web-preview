@@ -447,8 +447,8 @@ img { display: block; max-width: 100%; }
 .video-modal.active { display: flex; }
 .video-modal-inner {
   position: relative;
-  height: 92vh;
-  aspect-ratio: 9/16;
+  max-height: 90vh;
+  max-width: 90vw;
   border-radius: var(--radius);
   overflow: hidden;
   background: #000;
