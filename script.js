@@ -291,3 +291,5 @@ videoModal?.addEventListener('click', e => { if (e.target === videoModal) closeV
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && videoModal?.classList.contains('active')) closeVideoModal();
 });
+
+document.querySelectorAll('video').forEach(v => v.addEventListener('contextmenu', e => e.preventDefault()));
