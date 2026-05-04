@@ -1151,10 +1151,10 @@ img { display: block; max-width: 100%; }
   background: radial-gradient(ellipse, rgba(40,180,80,0.2) 0%, transparent 70%);
 }
 
-.p-coca {
-  background: linear-gradient(135deg, #1a0808 0%, #2a1010 40%, #150808 100%);
+.p-puma-copa {
+  background: linear-gradient(135deg, #0e0e0e 0%, #181818 40%, #0a0a0a 100%);
 }
-.p-coca::after {
+.p-puma-copa::after {
   content: '';
   position: absolute;
   top: 40%; left: 50%;
