@@ -1151,10 +1151,10 @@ img { display: block; max-width: 100%; }
   background: radial-gradient(ellipse, rgba(40,180,80,0.2) 0%, transparent 70%);
 }
 
-.p-pedidosya {
-  background: linear-gradient(135deg, #1a0a10 0%, #280f18 40%, #150810 100%);
+.p-dove {
+  background: linear-gradient(135deg, #141414 0%, #1e1e1e 40%, #101010 100%);
 }
-.p-pedidosya::after {
+.p-dove::after {
   content: '';
   position: absolute;
   top: 40%; left: 50%;
