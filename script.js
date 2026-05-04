@@ -32,7 +32,7 @@ const translations = {
     'portfolio.title': 'Portfolio',
     'clients.label': 'Marcas que confiaron en nosotros',
     'academy.tag': '3DK Academia',
-    'academy.title': 'CGI e IA de nivel mundial.<br>Aprendé con quien lo produce.',
+    'academy.title': 'CGI e IA mundial.<br>Aprendé con quien lo produce.',
     'academy.sub': 'Workflows reales. Clientes reales. Resultados reales.<br>Las herramientas que usamos en cada proyecto, ahora las enseñamos.',
     'c1.num': '01', 'c1.title': 'CGI FOOH<br>en Blender', 'c1.niche': 'Publicidad Viral',
     'c1.f1': 'Tracking y compositing VFX', 'c1.f2': 'Producción de campañas FOOH',
