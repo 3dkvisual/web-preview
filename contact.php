@@ -8,6 +8,12 @@ function clean($v) {
     return htmlspecialchars(strip_tags(trim($v)), ENT_QUOTES, 'UTF-8');
 }
 
+// Honeypot: bots fill this, humans don't
+if (!empty($_POST['website'])) {
+    echo json_encode(['ok' => true, 'message' => '¡Mensaje enviado! Te respondemos a la brevedad.']);
+    exit;
+}
+
 $name    = clean($_POST['name']    ?? '');
 $company = clean($_POST['company'] ?? '');
 $email   = filter_var(trim($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
