@@ -205,7 +205,6 @@ if (vidA && vidB) {
 
   active.src = heroSrc(0);
   applyHeroClipFraming(active, 0);
-  active.load();
   active.play().catch(() => {});
 
   function onHeroTimeUpdate() {
